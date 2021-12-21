@@ -1,0 +1,39 @@
+.tableFooter {
+  padding: 8px 0px;
+  width: 100%;
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+  color: #2c3e50;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  padding: 18px 27px;
+  background-color: #00bc8c;
+  border-color: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.3333333;
+}
+
+.button:first-child {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.button:last-child {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.activeButton {
+  color: white;
+  background: #00dba3;
+}

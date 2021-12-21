@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #262a35;
+  color: #fff;
+  border-color: transparent;
+  min-height: 60px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 5px;
+  height: 45px;
+}
+
+.navbar__list {
+  height: 60px;
+  min-height: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 1;
+}
+
+.navbar__list-item {
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 15px;
+  transition: background-color 0.2s ease-in-out;
+  line-height: 21px;
+}
+
+.navbar__list-item a {
+  margin-left: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar__list-item:hover {
+  background-color: #5c6378;
+}
+
+.navbar_button_container {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .navbar__list {
+    visibility: hidden;
+    opacity: 0;
+    width: 60%;
+  }
+
+  .menu-opened {
+    visibility: visible !important;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transition: visibility 0s linear 0s, opacity 300ms, height 300ms;
+    opacity: 1 !important;
+  }
+
+  .menu-closed {
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    transition: visibility 0s linear 300ms, opacity 0ms;
+  }
+
+  .navbar__list-item {
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+    line-height: 21px;
+  }
+
+  .navbar_button_container {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar_button {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+
+  .navbar_button:focus {
+    background-color: #28415b;
+  }
+}

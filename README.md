@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Prueba técnica Fintonic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Contexto
 
-## Available Scripts
+Se ha realizado un proyecto simple funcional con una maquetación replicada de la plataforma [Open Trivia](https://opentdb.com/).
 
-In the project directory, you can run:
+## Apartados completados
 
-### `npm start`
+- La única tecnología obligatoria a usar es React como librería de componentes. ✅
+- Los datos desde se deben obtener desde https://opentdb.com/api_config.php. ✅
+- Se debe replicar completamente, incluído el menú de navegación superior. ✅
+  -El menú no debe tener ninguna lógica, sólo estar maquetado. ✅
+- Crear formulario para el filtrado de cuestiones. ✅
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Extra
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Ordenamiento de tabla por identificador. ✅
+- Logica para visualizar mas de 10 preguntas a la vez en la tabla ✅
 
-### `npm test`
+## Apartados a añadir
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Flechas en la paginación y no mostrar todas las páginas generadas por preguntas. En el caso de la obtención de muchos datos no quedaría muy correcto.
+- Ordenamiento por todos los campos.
+- Si la API puediera proveerlo, paginación dinámica.
+- Implementación de test en el caso de componentes mas complejos.
+- ESlint
 
-### `npm run build`
+## Inicio de entorno
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de arrancar el entorno se deben instalar las dependencias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+npm i
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Una vez instaladas las dependencias, arrancar el entorno local:
 
-### `npm run eject`
+```shell
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Abrir en [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencias añadidas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React-icons
